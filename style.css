@@ -2,17 +2,23 @@
 
 body{
     margin: 0px;
+    background-color: #F4F1E8;
+    width: 100%;
+    margin: 0px;
+    display:block;
 }
 
 .section {
-    background-color: #F4F1E8;
-    width: 100%;
-    height: 500px;
-    margin: 0px;
-    display:flex;
+    height: 400px;
+}
+
+#hero {
+    display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
 }
+
 
 #hero h1{
     font-family: Radley;
@@ -21,14 +27,36 @@ body{
     font-weight: 100;
 }
 
-#hero h2 {
+#hero h3 {
     font-family: Carlito;
     font-weight: 100;
 }
 
-#hero {
-    text-align: center;
+#about {
+    display: flex;
 }
+
+#about > * {
+    flex: 1 1 50%;
+    display: flex;
+}
+/* Need to figure out how to make the text a flex item
+.about-left {
+    justify-content: end;
+    align-items: center;
+}
+
+.about-right {
+    justify-content: start;
+    align-items: center;
+}
+*/
+
+.about-text{
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
 .highlight {
     color: #9B4819;
 }
@@ -46,8 +74,18 @@ body{
         font-size: 2rem;
     }
 
-    #hero h2 {
+    #hero h3 {
         font-size: 1rem;
     }
 
+}
+
+h2 {
+    font-family: Radley;
+    font-size: 2rem;
+    font-weight: 200;
+}
+
+p {
+    font-family: Carlito;
 }
