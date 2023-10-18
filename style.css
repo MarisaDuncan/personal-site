@@ -39,24 +39,23 @@ body{
 
 .about-text {
     width: 60%;
-    float: left;
     padding-right: 5%;
+    padding-left: 5%;
+    flex: 1 1 60%;
+    max-width: 500px;
+    min-width: 200px;
 }
 
-.about-flex {
-    width: 70%;
-}
-/* Need to figure out how to make the text a flex item
-.about-left {
-    justify-content: end;
-    align-items: center;
+.about-img {
+    max-width: 250px;
+    flex: 1 1 40%;
 }
 
-.about-right {
-    justify-content: start;
-    align-items: center;
+img {
+    width: 100%;
+    height: auto;
 }
-*/
+
 .highlight {
     color: #9B4819;
 }
@@ -77,6 +76,11 @@ body{
     #hero h3 {
         font-size: 1rem;
     }
+
+    body > *{
+        flex-direction: column;
+    }
+    
 
 }
 
