@@ -34,11 +34,17 @@ body{
 
 #about {
     display: flex;
+    justify-content: center;
 }
 
-#about > * {
-    flex: 1 1 50%;
-    display: flex;
+.about-text {
+    width: 60%;
+    float: left;
+    padding-right: 5%;
+}
+
+.about-flex {
+    width: 70%;
 }
 /* Need to figure out how to make the text a flex item
 .about-left {
@@ -51,12 +57,6 @@ body{
     align-items: center;
 }
 */
-
-.about-text{
-    padding-left: 10%;
-    padding-right: 10%;
-}
-
 .highlight {
     color: #9B4819;
 }
