@@ -10,9 +10,9 @@ body{
     
 }
 
-* {
+/** {
     border: #9B4819 solid 3px;
-}
+}*/
 #hero {
     display: flex;
     justify-content: center;
@@ -51,7 +51,10 @@ body{
 #projects {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 2.75fr;
+    grid-template-rows: 1fr 2fr;
+    column-gap: 2rem;
+    justify-items: center;
+    margin: 0rem 1rem;
 }
 
 .projects-title {
@@ -121,8 +124,6 @@ p {
     }
 
 
-
-   
     
 
 }
