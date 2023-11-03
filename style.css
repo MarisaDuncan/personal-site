@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Carlito&family=Radley:ital@0;1&display=swap');
 
+*{
+    border: blue solid 2px;
+}
+
 body{
     margin: 0px;
     background-color: #F4F1E8;
@@ -9,11 +13,6 @@ body{
     min-height: 400px;
     
 }
-
-/** {
-    border: #9B4819 solid 3px;
-
-}*/
 
 #hero {
     display: flex;
@@ -104,6 +103,54 @@ h2 {
 
 p {
     font-family: Carlito;
+}
+
+
+#background > h2 {
+    text-align: center;
+    font-size: 2.5rem
+}
+
+
+.background-title {
+    text-align: center;
+}
+
+.bold {
+    font-weight: 500;
+}
+
+.timeline {
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+.info > * {
+    margin: 0;
+    padding: 0;
+}
+
+.info {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.timeline:after {
+  content:"";
+  height: 3px;
+  background: red;
+  grid-column: 1 / -1;
+  grid-row: 2 / 3;
+}
+
+.info:nth-child(2){
+    grid-row: 2 / 3;
+    grid-column: 2 / 3;
+}
+
+.info:nth-child(3){
+    grid-row: 1 / 2;
+    grid-column: 3 / 4;
 }
 
 @media (max-width: 600px){
